@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@69.4,471;100,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>Omar Ruiz - El mejor desarrollador web Frontend React del Perú</title>
     <meta name="title" content="Omar Ruiz - El mejor desarrollador web Frontend React del Perú">
@@ -37,43 +38,50 @@
 
 <body class="body">
     <header class="header">
-        <nav class="nave">
+        <nav class="nav">
             <div class="container container--nav-r">
                 <a href="#profile">
-                    <img src="./assets/img/foto-proyecto-_3_.webp" alt="Logo Elliot Garamendi" width="48" height="48" class="nav__logo"/>
+                    <img src="./assets/img/foto-proyecto-_3_.webp" alt="Logo Elliot Garamendi" width="48" height="48"
+                        class="nav__logo" />
                 </a>
+                <label for="menu" class="icon icon--menu"><i class="bi bi-list"></i></label>
+                <input type="checkbox" name="" id="menu" class="menu__checkbox">
                 <ul class="menu">
                     <li>
-                        <a href="#profile">Perfil</a>
+                        <a href="#profile" class="menu__link">Perfil</a>
                     </li>
                     <li>
-                        <a href="#experiences">Experiencia</a>
+                        <a href="#experiences" class="menu__link">Experiencia</a>
                     </li>
-                    <!-- <li>
-            <a href="#">Proyectos</a>
-          </li>
-          <li>
-            <a href="#">Habilidades</a>
-          </li> -->
                     <li>
-                        <a href="#contact">Contacto</a>
+                        <a href="#" class="menu__link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="menu__link">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <article id="profile">
-            <div>
-                <div>
-                    <h1>Omar Ruiz</h1>
-                    <h2>El mejor desarrollador web Frontend React del Perú</h2>
-                    <p>
+        <article id="profile" class="section section--hero">
+            <div class="container">
+                <div class="card">
+                <div class="card__header">
+                    <h1 class="card__title">Omar Ruiz</h1>
+                </div>
+                <div class="card__body">
+                    <h2 class="card__subtitle">El mejor desarrollador web Frontend React del Perú</h2>
+                    <p class="card__text">
                         Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo Web
                         Frontend.
                         Apasionado del autoaprendizaje y del código limpio.
                     </p>
-                    <div>
+                    </div>
+                    <div class="card__footer">
                         <a href="https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=7q73aZ" target="_blank"
                             rel="noopener noreferrer">CV</a>
                         <a href="#">Proyectos</a>

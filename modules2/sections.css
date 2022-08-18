@@ -1,12 +1,21 @@
-.container {
-
+.section {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+  }
+  
+  .section--hero {
+    padding-top: calc(5rem + var(--padding-section));
+  }
+  
+  .container {
     max-width: var(--max-width-container);
     margin: 0 auto;
-    padding: var(--padding-container);
-}
-
-.container--nav-r {
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
+  }
+  
+  .container--nav-r {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
