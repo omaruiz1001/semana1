@@ -45,7 +45,7 @@
                         class="nav__logo" />
                 </a>
                 <label for="menu" class="icon icon--menu"><i class="bi bi-list"></i></label>
-                <input type="checkbox" name="" id="menu" class="menu__checkbox">
+                <input type="checkbox" name="" id="menu" class="menu__checkbox d-none">
                 <ul class="menu">
                     <li>
                         <a href="#profile" class="menu__link">Perfil</a>
@@ -68,45 +68,43 @@
     </header>
     <main>
         <article id="profile" class="section section--hero section--profile">
-            <div class="container">
+            <div class="container container--hero">
                 <div class="card">
                     <div class="card__header">
                         <h1 class="card__title">Omar Ruiz</h1>
                     </div>
                     <div class="card__body">
                         <h2 class="card__subtitle">El mejor desarrollador web Frontend React del Perú</h2>
-                        <p class="card__text md:d-block">
-                            Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo
+                        <p class="card__text d-none md:d-block">
+                            ✨😎Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo
                             Web
                             Frontend.
-                            Apasionado del autoaprendizaje y del código limpio.
+                            Apasionado del autoaprendizaje y del código limpio.✨😎
                         </p>
                     </div>
                     <div class="card__footer">
                         <a href="https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=7q73aZ" target="_blank"
                             rel="noopener noreferrer" class="button button--primary">CV</a>
-                        <a href="#" class="button button--secondary">Proyectos</a>
-                        <div href="#" class="button button--secondary">Proyectos</div>
-                        <button href="#" class="button button--primary button--outline">Proyectos</button>
-                        <span href="#" class="button button--secondary button--outline">Proyectos</span>
+                        <a href="#" class="button button--primary button--outline">Proyectos</a>  
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/img/foto-proyecto.jpg" alt="Omar Ruiz" width="256" height="256" />
-                    <figure>
-                        <img src="./assets/svg/logo-html-5.svg" alt="Logo HTML" width="64" height="64" />
-                        <img src="./assets/svg/logo-css-3.svg" alt="Logo CSS" width="64" height="64" />
-                        <img src="./assets/svg/logo-javascript.svg" alt="Logo JavaScript" width="64" height="64" />
-                        <img src="./assets/svg/logo-react.svg" alt="Logo React" width="64" height="64" />
+                <div class="hero-img">
+                    <img src="./assets/img/foto-proyecto.jpg" alt="Omar Ruiz" width="256" height="256" class="hero-img__img" />
+                    <figure lang="hero-img__decorators">
+                        <img src="./assets/svg/logo-html-5.svg" alt="Logo HTML" width="64" height="64" class="hero-img__decorator"/>
+                        <img src="./assets/svg/logo-css-3.svg" alt="Logo CSS" width="64" height="64"class="hero-img__decorator" />
+                        <img src="./assets/svg/logo-javascript.svg" alt="Logo JavaScript" width="64" height="64"class="hero-img__decorator" />
+                        <img src="./assets/svg/logo-react.svg" alt="Logo React" width="64" height="64"class="hero-img__decorator"/>
                     </figure>
                 </div>
             </div>
         </article>
-        <section id="experiences">
-            <div>
-                <h2>Experiencias</h2>
-                <table>
-                    <thead>
+        <section id="experiences" class="section">
+            <div class="container container--element">
+                <h2 class="section__title">Experiencias</h2>
+                <div class="table--responsive">
+                <table class="table">
+                    <thead class="table__header">
                         <tr>
                             <th>N°</th>
                             <th>Empresa</th>
@@ -203,17 +201,18 @@
                             </td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    <tfoot class="table__footer">
                         <tr>
                             <td colspan="5">
                                 <a href="https://www.linkedin.com/in/elliotgaramendi/" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" class="button">
                                     Ver más experiencias
                                 </a>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
+                </div>
             </div>
         </section>
         <section id="contact">

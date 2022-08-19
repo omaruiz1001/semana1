@@ -1,0 +1,33 @@
+.table--responsive {
+    width: 100%;
+    overflow: auto;
+}
+
+.table {
+    background-color: var(--primary-theme-color);
+}
+
+.table__header {
+    background-color: var(--tertiary-shadow-color);
+    color: var(--primary-highlight-color);
+}
+
+th,
+td {
+    pad: 0.5rem;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--secondary-shadow-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--primary-theme-color);
+}
+.button{
+    background-color: var(--primary-theme-color);
+}
+.table__footer{
+    background-color: var(--tertiary-shadow-color);
+    text-align: center;
+}

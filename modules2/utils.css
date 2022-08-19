@@ -1,5 +1,13 @@
-@media (min-width:768px){
-    .md\:d-block{
-        display: block;
+.d-none {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .md\:d-none {
+      display: none;
     }
-}
+  
+    .md\:d-block {
+      display: block;
+    }
+  }
